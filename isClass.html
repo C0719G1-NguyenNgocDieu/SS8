@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isClassName(name) {
+        let regexp = /^[C|A|P][0-9]{4}[G|H|I|K|L|M]$/;
+        if (regexp.test(name)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    let name1 = 'C0318G';
+    let name2 = 'P0314A';
+    console.log(isClassName(name1));
+    console.log(isClassName(name2));
+
+</script>
+</body>
+</html>
